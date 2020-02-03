@@ -1,0 +1,162 @@
+body {
+	margin: 0;
+}
+
+.nav-bar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	border: 1px #ddd solid;
+	padding: 1em;
+	border-radius: 2px;
+	/* box-shadow: 0 1px 5px 0px rgb(0, 0, 0, .75); */
+		/* 0 2px 2px 0 rgba(0,0,0,.14) */
+		/* 0 3px 1px -2px rgba(0,0,0,.2), */
+		/* 0 1px 5px 0 rgba(0,0,0,.12); */
+	height: 4em;
+}
+
+.nav-bar__logo {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* border: 1px black solid; */
+	height: inherit;
+	/* border: 1px black solid; */
+}
+
+#logo {
+	grid-column: 2/3;
+	height: inherit;
+}
+
+.nav-bar__cart {
+	justify-self: end;
+}
+
+#cart {
+	width: 3em;
+}
+
+/* START CAROUSEL */
+.carousel {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	/* background-color: #ddd; */
+	background-image: url("../img/jar-sun.jpg");
+	background-position: center center;
+	background-size: cover;
+	height: 35em; /* Change to pixels because image height resizing */
+	transition: all .2s ease;
+	-webkit-animation: fade 4s infinite;
+	-moz-animation: fade 4s infinite;
+	-o-animation: fade 4s infinite;
+	animation: fade 4s infinite;
+}
+
+.carousel__text {
+	font-family: 'Roboto Medium';
+	font-size: 5em;
+	color: white;
+	text-align: center;
+	align-self: center;
+}
+
+.carousel__left-arrow {
+	justify-self: start;
+	align-self: center;
+	padding: 1em;
+}
+
+.carousel__left-arrow > img {
+	width: 2em;
+	opacity: 40%;
+	cursor: pointer;
+}
+
+.carousel__left-arrow > img:hover {
+	opacity: 75%;
+}
+
+.carousel__right-arrow {
+	justify-self: end;
+	align-self: center;
+	padding: 1em;
+}
+
+.carousel__right-arrow > img {
+	width: 2em;
+	opacity: 40%;
+	cursor: pointer;
+}
+
+.carousel__right-arrow > img:hover {
+	opacity: 75%;
+}
+/* END CAROUSEL */
+
+.top-products {
+	margin-top: 6em;
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Roboto Thin';
+	font-size: 5em;
+	letter-spacing: 7px;
+	text-align: center;
+}
+
+.top-products__three-celebs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 1em;
+	margin: 1em;
+}
+
+.top-products__three-celebs > div {
+	height: 300px;
+	background-color: #ccc;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	align-content: flex-end;
+	background-position: center center;
+	background-size: cover;
+
+	box-shadow:
+		0 2px 2px 0 rgba(0,0,0,.14),
+		0 3px 1px -2px rgba(0,0,0,.2),
+		0 1px 5px 0 rgba(0,0,0,.12);
+	transition: box-shadow 0.3s ease;
+	border-radius: 2px
+}
+
+.top-products__three-celebs > div:hover {
+	box-shadow:
+		0 2px 2px 0 rgba(0,0,0,.14),
+		0 5px 10px 0px rgba(0,0,0,.5),
+		0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.top-products .name {
+	font-family: 'Roboto';
+	font-size: 2em;
+	color: white;
+	/* text-shadow:
+		-1px -1px 0 rgba(0, 0, 0, 0.3),
+		1px -1px 0 rgba(0, 0, 0, 0.3),
+		-1px 1px 0 rgba(0, 0, 0, 0.3),
+		1px 1px 0 rgba(0, 0, 0, 0.3); */
+	letter-spacing: 3px;
+}
+
+.top-products .first {
+	background-image: url("../img/gordon-ramsay.jpg");
+}
+
+.top-products .second {
+	background-image: url("../img/henry-cavill.jpg");
+}
+
+.top-products .third {
+	background-image: url("../img/shia-labeouf.jpg");
+}
