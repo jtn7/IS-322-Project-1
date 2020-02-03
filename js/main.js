@@ -10,7 +10,7 @@ function carousel_left() {
 	} else {
 		--carouselCounter
 	}
-	document.getElementById("carousel").style.backgroundImage = 'url("../img/' + carouselImgs[carouselCounter] + '.jpg")'
+	document.getElementById("carousel").style.backgroundImage = 'url("img/' + carouselImgs[carouselCounter] + '.jpg")'
 	// carousel.style.backgroundColor = 'black'
 }
 
@@ -20,6 +20,6 @@ function carousel_right() {
 	} else {
 		++carouselCounter
 	}
-	document.getElementById("carousel").style.backgroundImage = 'url("../img/' + carouselImgs[carouselCounter] + '.jpg")'
+	document.getElementById("carousel").style.backgroundImage = 'url("img/' + carouselImgs[carouselCounter] + '.jpg")'
 	// carousel.style.backgroundColor = 'red'
 }
