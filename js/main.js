@@ -11,7 +11,6 @@ function carousel_left() {
 		--carouselCounter
 	}
 	document.getElementById("carousel").style.backgroundImage = 'url("img/' + carouselImgs[carouselCounter] + '.jpg")'
-	// carousel.style.backgroundColor = 'black'
 }
 
 function carousel_right() {
@@ -21,5 +20,4 @@ function carousel_right() {
 		++carouselCounter
 	}
 	document.getElementById("carousel").style.backgroundImage = 'url("img/' + carouselImgs[carouselCounter] + '.jpg")'
-	// carousel.style.backgroundColor = 'red'
 }
