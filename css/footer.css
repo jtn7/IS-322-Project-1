@@ -1,0 +1,80 @@
+.footer {
+	display: grid;
+	grid-template-columns: repeat(3, 300px);
+	justify-content: space-around;
+	align-items: start;
+	height: 250px;
+	background-color: #3a3a3a;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 16pt;
+	color: white;
+	margin-top: 10em;
+}
+
+.footer > .logo-nav {
+	align-self: center;
+	text-align: center;
+}
+
+.footer > .logo-nav > .nav {
+	margin-top: 1em;
+}
+
+.footer > .logo-nav a {
+	text-decoration: none;
+}
+
+.footer > .logo-nav a:active {
+	color: red;
+}
+
+.footer > .logo-nav a:visited{
+	color: white;
+}
+
+.footer > .logo-nav a:hover{
+	text-decoration: underline;
+}
+
+.footer > .logo-nav > img {
+	width: 10em;
+}
+
+.footer h3 {
+	font-weight: 400;
+	font-size: 20pt;
+	margin-bottom: .75em;
+}
+
+.footer > .info > h3 {
+	text-align: center;
+}
+
+.footer > .social {
+	text-align: center;
+}
+
+.footer > .social > .twitter:hover {
+	fill: #00acee
+}
+
+.footer > .social > .instagram:hover {
+	fill: #fb3958
+}
+
+.footer > .social > .facebook:hover {
+	fill: #3b5998
+}
+
+.footer svg {
+	height: 32px;
+	width: 32px;
+	fill: white;
+	cursor: pointer;
+}
+
+.footer > .address svg {
+	width: 26px;
+	height: 26px;
+}
