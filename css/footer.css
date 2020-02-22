@@ -9,7 +9,6 @@
 	font-weight: 500;
 	font-size: 16pt;
 	color: white;
-	margin-top: 10em;
 }
 
 .footer > .logo-nav {
@@ -29,7 +28,7 @@
 	color: red;
 }
 
-.footer > .logo-nav a:visited{
+.footer > .logo-nav a:any-link, .logo-nav a:visited {
 	color: white;
 }
 

@@ -2,6 +2,11 @@ body {
 	margin: 0;
 }
 
+.logo {
+	grid-column: 2/3;
+	height: inherit;
+}
+
 .nav-bar {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -23,10 +28,6 @@ body {
 	/* border: 1px black solid; */
 }
 
-#logo {
-	grid-column: 2/3;
-	height: inherit;
-}
 
 .nav-bar__cart {
 	justify-self: end;
@@ -53,7 +54,6 @@ body {
 }
 
 .carousel__text {
-	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	font-size: 5em;
 	color: white;
@@ -100,7 +100,6 @@ body {
 }
 
 h1 {
-	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	font-size: 5em;
 	letter-spacing: 7px;
@@ -140,7 +139,6 @@ h1 {
 }
 
 .top-products .name {
-	font-family: 'Roboto', sans-serif;
 	font-size: 2em;
 	color: white;
 	/* text-shadow:
@@ -183,7 +181,7 @@ h1 {
 	display: grid;
 	row-gap: 1.5em;
 	grid-template-columns: repeat(3, 1fr);
-	font-family: 'Roboto', sans-serif;
+
 	font-size: 1.2em;
 }
 
@@ -215,7 +213,7 @@ h1 {
 	margin-left: 15%;
 	margin-right: 15%;
 
-	font-family: 'Roboto', sans-serif;
+
 	font-size: 2em;
 
 }
