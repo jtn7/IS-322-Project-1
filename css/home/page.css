@@ -2,41 +2,6 @@ body {
 	margin: 0;
 }
 
-.logo {
-	grid-column: 2/3;
-	height: inherit;
-}
-
-.nav-bar {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	border: 1px #ddd solid;
-	padding: 1em;
-	border-radius: 2px;
-	/* box-shadow: 0 1px 5px 0px rgb(0, 0, 0, .75); */
-		/* 0 2px 2px 0 rgba(0,0,0,.14) */
-		/* 0 3px 1px -2px rgba(0,0,0,.2), */
-		/* 0 1px 5px 0 rgba(0,0,0,.12); */
-	height: 4em;
-}
-
-.nav-bar__logo {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	/* border: 1px black solid; */
-	height: inherit;
-	/* border: 1px black solid; */
-}
-
-
-.nav-bar__cart {
-	justify-self: end;
-}
-
-#cart {
-	width: 3em;
-}
-
 /* START CAROUSEL */
 .carousel {
 	display: grid;
@@ -108,13 +73,18 @@ h1 {
 
 .top-products__three-celebs {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 1em;
+	grid-template-columns: repeat(3, 550px);
+	row-gap: 1em;
+	justify-content: center;
+	column-gap: 2em;
 	margin: 1em;
+
+	background-position: center center;
+	background-size: cover;
 }
 
 .top-products__three-celebs > div {
-	height: 300px;
+	height: 400px;
 	background-color: #ccc;
 
 	display: grid;
@@ -128,7 +98,9 @@ h1 {
 		0 3px 1px -2px rgba(0,0,0,.2),
 		0 1px 5px 0 rgba(0,0,0,.12);
 	transition: box-shadow 0.3s ease;
-	border-radius: 2px
+	border-radius: 2px;
+
+	cursor: pointer;
 }
 
 .top-products__three-celebs > div:hover {
@@ -153,76 +125,99 @@ h1 {
 	transition: opacity .20s ease-in-out;
 }
 
-.top-products .first {
-	/* background-image: url("../img/gordon-ramsay.jpg"); */
-}
-
-.top-products .second {
-	/* background-image: url("../img/henry-cavill.jpg"); */
-}
-
-.top-products .third {
-	/* background-image: url("../img/shia-labeouf.jpg"); */
-}
-
 .top-products__three-celebs > div:hover > .name {
 	opacity: 1;
+}
+
+.category-h1 {
+	margin-top: 2em;
 }
 
 .category-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 1em;
+	justify-items: center;
 
-	margin-top: 10em;
+	margin:auto;
+	margin-top: 5em;
+	width: 70%;
 }
 
 .category {
-	display: grid;
-	row-gap: 1.5em;
-	grid-template-columns: repeat(3, 1fr);
-
 	font-size: 1.2em;
 }
 
 .category__img {
-	grid-column: 2/3;
-
-	background-color: #ddd;
-
 	border-radius: 50%;
 	width: 10em;
 	height: 10em;
-	line-height: 10em;
 
-	text-align: center;
+	margin-bottom: 1em;
+
+	background-color: #ddd;
+	cursor: pointer;
+
+	background-position: center center;
+	background-size: cover;
+}
+
+#y-cat {
+	background-image: url('https://www.sfcg.org/wp-content/uploads/2016/11/youtube-flat.png');
+}
+
+#k-cat {
+	background-image: url('https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1555675108/notredamehscom/nl5pebdr4vf4h9o78ol9/KoreanFlag.png');
+}
+
+#p-cat {
+	background-image: url('https://b.thumbs.redditmedia.com/oonqiPCgKWN3i4lnIlpnKY0qw41CKYs3rYezMxw1AOQ.png');
 }
 
 .category__name {
-	grid-column: 2/3;
-	grid-row: 2;
 	text-align: center;
 }
 
 .category-preview-container {
 	display: grid;
-	grid-template-columns: repeat(3, 300px);
-	gap: .5em;
+	grid-template-columns: repeat(3, 350px);
+	gap: 1em;
+	justify-content: center;
 
 	margin-top: 4em;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-bottom: 5em;
 
 
-	font-size: 2em;
+	font-size: 1.7em;
 
 }
 
 .category-preview-container .preview {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: start;
+	align-items: flex-end;
+	padding-bottom: 3px;
+	padding-left: .5em;
+	color: white;
 	background-color: #ddd;
-	height: 10em;
+	height: 450px;
 	border-radius: 3px;
+
+	background-position: center center;
+	background-size: cover;
+
+	box-shadow:
+	0 2px 2px 0 rgba(0,0,0,.14),
+	0 3px 1px -2px rgba(0,0,0,.2),
+	0 1px 5px 0 rgba(0,0,0,.12);
+
+	transition: box-shadow 0.3s ease;
+
+	cursor: pointer;
+}
+
+.category-preview-container .preview:hover {
+	box-shadow:
+		0 2px 2px 0 rgba(0,0,0,.14),
+		0 5px 10px 0px rgba(0,0,0,.5),
+		0 1px 5px 0 rgba(0,0,0,.12);
 }

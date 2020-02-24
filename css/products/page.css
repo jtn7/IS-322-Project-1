@@ -3,6 +3,10 @@ body {
 	background-color: #f6f6f6;
 }
 
+select {
+	font-size: 16pt;
+}
+
 .products-container {
 	margin-top: 3em;
 	margin-left: 15%;
@@ -18,14 +22,14 @@ body {
 .products-container > .sorting {
 	display: grid;
 	padding: 2em;
-	grid-template-columns: 6em 6em;
+	grid-template-columns: 15% 15%;
 	gap: 1em;
 	border-bottom: 1px gray solid;
 }
 
 .products-container > .products {
 	display: grid;
-	grid-template-columns: repeat(3, 250px);
+	grid-template-columns: repeat(3, 350px);
 	justify-content: center;
 	gap: 1em;
 
@@ -34,11 +38,10 @@ body {
 	margin-right: 1em;
 
 	padding-bottom: 2em;
-
-	text-align: center;
 }
 
 .products .product-box {
+	display: flex;
 	background-color: gray;
 	border-radius: 2px;
 	height: 250px;

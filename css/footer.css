@@ -11,32 +11,32 @@
 	color: white;
 }
 
-.footer > .logo-nav {
+.footer .logo-nav {
 	align-self: center;
 	text-align: center;
 }
 
-.footer > .logo-nav > .nav {
+.footer .logo-nav > .nav {
 	margin-top: 1em;
 }
 
-.footer > .logo-nav a {
+.footer .logo-nav a {
 	text-decoration: none;
 }
 
-.footer > .logo-nav a:active {
+.footer .logo-nav a:active {
 	color: red;
 }
 
-.footer > .logo-nav a:any-link, .logo-nav a:visited {
+.footer .logo-nav a:any-link, .logo-nav a:visited {
 	color: white;
 }
 
-.footer > .logo-nav a:hover{
+.footer .logo-nav a:hover{
 	text-decoration: underline;
 }
 
-.footer > .logo-nav > img {
+.footer .logo-nav img {
 	width: 10em;
 }
 

@@ -13,9 +13,8 @@
 
 <body>
 	<div class="header">
-		<div></div>
 		<div class="nav-bar__logo">
-			<img class="logo" src="/img/Nectr.png" alt="Nectr Logo">
+			<a href="/"><img class="logo" src="/img/Nectr.png" alt="Nectr Logo"></a>
 		</div>
 		<div class="nav-bar__cart">
 			<img id="cart" src="/svg/Mason Jar/Mason Jar.svg" alt="">
@@ -24,8 +23,17 @@
 	<div class="products-container">
 		<div class="sorting">
 			<select name="sort-by">
+				<option value="sort-by">Sort By</option>
+				<option value="AtoZ">A-Z</option>
+				<option value="ZtoA">Z-A</option>
+				<option value="newest">Newest First</option>
+				<option value="oldest">Oldest First</option>
 			</select>
 			<select name="category">
+				<option value="youtubers">Categories</option>
+				<option value="youtubers">Youtubers</option>
+				<option value="kpop">K-Pop</option>
+				<option value="political">Political Figures</option>
 			</select>
 		</div>
 		<div class="products">
