@@ -26,6 +26,12 @@ body {
 	align-self: center;
 }
 
+@media (max-width: 411px) {
+	.carousel__text {
+		font-size: 3em;
+	}
+}
+
 .carousel__left-arrow {
 	justify-self: start;
 	align-self: center;
@@ -84,23 +90,48 @@ h1 {
 } */
 
 .top-products__three-celebs {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	column-gap: 5%;
+
+	width: 80%;
+	height: 500px;
+	margin: auto;
 
 	background-position: center center;
 	background-size: cover;
 }
 
+@media (max-width: 1024px) {
+	.top-products__three-celebs {
+		width: 95%;
+	}
+}
+
+@media (max-width: 768px) {
+	.top-products__three-celebs {
+
+	grid-template-columns: repeat(1, 1fr);
+	height: 1500px;
+	column-gap: 2%;
+	row-gap: 5%;
+	}
+}
+
 @media (max-width: 411px) {
 	.top-products__three-celebs {
 
+	grid-template-columns: repeat(1, 1fr);
+	height: 1500px;
+	column-gap: 2%;
+	row-gap: 5%;
 	}
 }
 
 .top-products__three-celebs > div {
-	width: 10em;
-	height: 10em;
+	width: 100%;
+	height: 100%;
 	background-color: #ccc;
 
 	display: grid;
@@ -159,6 +190,12 @@ h1 {
 	width: 70%;
 }
 
+@media (max-width: 768px) {
+	.category-container {
+		width: 90%;
+	}
+}
+
 @media (max-width: 411px) {
 	.category-container {
 		width: 90%;
@@ -183,6 +220,16 @@ h1 {
 	background-size: cover;
 }
 
+@media (max-width: 768px) {
+	.category-h1 {
+		font-size: 6em;
+	}
+	.category__img {
+		width: 10em;
+		height: 10em;
+	}
+}
+
 @media (max-width: 414px) {
 	.category-h1 {
 		font-size: 4em;
@@ -191,7 +238,6 @@ h1 {
 		width: 5em;
 		height: 5em;
 	}
-
 }
 
 #y-cat {
@@ -224,6 +270,15 @@ h1 {
 
 	font-size: 1.7em;
 }
+
+@media (max-width: 1024px) {
+	.category-preview-container {
+		grid-template-columns: repeat(2, 1fr);
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
 @media (max-width: 768px) {
 	.category-preview-container {
 		grid-template-columns: repeat(2, 1fr);
