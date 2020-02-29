@@ -1,7 +1,8 @@
 .footer {
 	display: grid;
-	grid-template-columns: repeat(3, 300px);
+	grid-template-columns: repeat(3, 1fr);
 	justify-content: space-around;
+	justify-items: center;
 	align-items: start;
 	height: 250px;
 	background-color: #3a3a3a;
@@ -9,6 +10,14 @@
 	font-weight: 500;
 	font-size: 16pt;
 	color: white;
+}
+
+@media (max-width: 768px) {
+	.footer {
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+		height: 600px;
+	}
 }
 
 .footer .logo-nav {
