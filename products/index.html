@@ -23,15 +23,13 @@
 	</div>
 	<div class="products-container">
 		<div class="sorting">
-			<select name="sort-by">
-				<option value="sort-by">Sort By</option>
+			<select id="sortingSelect" name="sort-by" onchange="categoryChange()">
 				<option value="AtoZ">A-Z</option>
 				<option value="ZtoA">Z-A</option>
 				<option value="newest">Newest First</option>
 				<option value="oldest">Oldest First</option>
 			</select>
-			<select name="category">
-				<option value="youtubers">Categories</option>
+			<select id="categorySelect" name="category" onchange="categoryChange()">
 				<option value="youtubers">Youtubers</option>
 				<option value="kpop">K-Pop</option>
 				<option value="political">Political Figures</option>
@@ -129,6 +127,7 @@
 			</path>
 		</symbol>
 	</svg>
+	<script src="../js/products.js"></script>
 </body>
 
 </html>
